@@ -1,8 +1,7 @@
 #!/bin/sh
 
-echo "-----> Checking nx"
-if [ "$(npm list -g | grep -c nx)" -eq 0 ]; then
-  echo "-----> Checking nx"
-  npm install -g @nrwl/cli
-fi
-echo "-----> Installed nx"
+echo "-----> build frontend"
+cd frontend
+yarn
+npx nx build webapp
+echo "-----> fe built, success!"
