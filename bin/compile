@@ -2,6 +2,6 @@
 
 echo "-----> build frontend"
 cd frontend
-yarn
+npm i
 npx nx build webapp
 echo "-----> fe built, success!"
